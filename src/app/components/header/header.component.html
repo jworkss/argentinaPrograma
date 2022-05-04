@@ -4,63 +4,63 @@
   <i class="ri-moon-line change-theme" id="theme-button"></i>
 
   <div class="profile__container grid">
-      <div class="profile__data">
-          <div class="profile__border">
-              <div class="profile__perfil">
-                  <!-- Imagen de tamaño para el perfil del porfolio -->
-                  <img src="../assets/imagenes/perfil.png" alt="">
-              </div>
-          </div>
-
-          <h2 class="profile__name">Marcos Duarte</h2>
-          <h3 class="profile__profession">Desarrollador web full-stack</h3>
-
-          <ul class="profile__social">
-              <a href="https://www.linkedin.com/in/marcosjavierduarte/" target="_blank" class="profile__social-link">
-                  <i class="ri-linkedin-box-line"></i>
-              </a>
-              <a href="https://github.com/jworkss" target="_blank" class="profile__social-link">
-                  <i class="ri-github-line"></i>
-              </a>
-          </ul>
+    <div class="profile__data">
+      <div class="profile__border">
+        <div class="profile__perfil">
+          <!-- Imagen de tamaño para el perfil del porfolio -->
+          <img src="../assets/imagenes/perfil.png" alt="">
+        </div>
       </div>
 
-      <div class="profile__info grid">
-          <div class="profile__info-group">
-              <h3 class="profile__info-number">1</h3>
-              <p class="profile__info-description">
-                  Año <br> de estudio
-              </p>
-          </div>
-          <div class="profile__info-group">
-              <h3 class="profile__info-number">+xx</h3>
-              <p class="profile__info-description">
-                  Proyectos <br> completados
-              </p>
-          </div>
-          <div class="profile__info-group">
-              <h3 class="profile__info-number">+xx</h3>
-              <p class="profile__info-description">Clientes <br> satisfechos</p>
-          </div>
-      </div>
+      <h2 class="profile__name">{{miPorfolio.nombre}}</h2>
+      <h3 class="profile__profession">{{miPorfolio.position}}</h3>
 
-      <div class="profile__buttons">
-          <!-- Mi CV -->
-          <a download="" href="../assets/pdf/Marcos.pdf" class="button">
-              Descargar CV <i class="ri-download-line"></i>
-          </a>
+      <ul class="profile__social">
+        <a href={{miPorfolio.linkedin}} target="_blank" class="profile__social-link">
+          <i class="ri-linkedin-box-line"></i>
+        </a>
+        <a href={{miPorfolio.gitHub}} target="_blank" class="profile__social-link">
+          <i class="ri-github-line"></i>
+        </a>
+      </ul>
+    </div>
 
-          <div class="profile__buttons-small">
-              <!-- mi numero de whatsapp -->
-              <a href="https://api.whatsapp.com/send?phone=+541132279268&text=Hola, me gustaría contactarte."
-                  target="_blank" class="button button__small button__gray">
-                  <i class="ri-whatsapp-line"></i>
-              </a>
-              <!-- mensaje directo a redes sociales -->
-              <a href="https://m.me/JayMatamuneRose" target="_blank" class="button button__small button__gray">
-                  <i class="ri-messenger-line"></i>
-              </a>
-          </div>
+    <div class="profile__info grid">
+      <div class="profile__info-group">
+        <h3 class="profile__info-number">{{miPorfolio.sobreMi[0].cantidad}}</h3>
+        <p class="profile__info-description">
+          Años <br> de estudio
+        </p>
       </div>
+      <div class="profile__info-group">
+        <h3 class="profile__info-number">{{miPorfolio.sobreMi[1].cantidad}}</h3>
+        <p class="profile__info-description">
+          Proyectos <br> completados
+        </p>
+      </div>
+      <div class="profile__info-group">
+        <h3 class="profile__info-number">{{miPorfolio.sobreMi[2].cantidad}}</h3>
+        <p class="profile__info-description">Clientes <br> satisfechos</p>
+      </div>
+    </div>
+
+    <div class="profile__buttons">
+      <!-- Mi CV -->
+      <a download="" href={{miPorfolio.curriculum}} target="_BLANK" class="button">
+        Descargar CV <i class="ri-download-line"></i>
+      </a>
+
+      <div class="profile__buttons-small">
+        <!-- mi numero de whatsapp -->
+        <a href={{miPorfolio.whatsApp}} target="_blank"
+          class="button button__small button__gray">
+          <i class="ri-whatsapp-line"></i>
+        </a>
+        <!-- mensaje directo a redes sociales -->
+        <a href={{miPorfolio.messenger}} target="_blank" class="button button__small button__gray">
+          <i class="ri-messenger-line"></i>
+        </a>
+      </div>
+    </div>
   </div>
 </header>
