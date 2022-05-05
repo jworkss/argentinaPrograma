@@ -5,7 +5,11 @@
   "linkedin": "https://www.linkedin.com/in/marcosjavierduarte/",
   "gitHub": "https://github.com/jworkss",
   "sobreMi": [
+<<<<<<< HEAD
       { "id": "1", "nombre1":"años", "nombre2": "de estudio", "cantidad":"1"  },
+=======
+      { "id": "1", "nombre1":"años", "nombre2":"de estudio", "cantidad":"1"  },
+>>>>>>> nuevo_codigo
       {"id": "2", "nombre1":"Proyectos", "nombre2":"Completados", "cantidad":"+XX"},
       {"id": "3", "nombre1":"Clientes", "nombre2":"Satisfechos", "cantidad":"+XX"}
     ],
@@ -13,15 +17,21 @@
   "messenger": "https://m.me/JayMatamuneRose",
   "curriculum": "https://drive.google.com/file/d/1CXTFeeK3IIM80Ks6XzgfzWv4djmmqMaW/view?usp=sharing",
   "proyectos":[
+<<<<<<< HEAD
     {"id":"1", "nombre":"proyecto1","descripcion":"tipo trabajo1", "img":"../assets/imagenes/project1.jpg", "url":"/"},
     {"id":"2", "nombre":"proyecto2","descripcion":"tipo trabajo2", "img":"../assets/imagenes/project2.jpg", "url":"/"},
     {"id":"3", "nombre":"proyecto3","descripcion":"tipo trabajo3", "img":"../assets/imagenes/project3.jpg", "url":"/"},
     {"id":"4", "nombre":"proyecto4","descripcion":"tipo trabajo4", "img":"../assets/imagenes/project4.jpg", "url":"/"},
     {"id":"5", "nombre":"proyecto5","descripcion":"tipo trabajo5", "img":"../assets/imagenes/project5.jpg", "url":"/"}
+=======
+    {"id":"1", "nombre":"proyecto1","descripcion":"tipo trabajo1", "img":"../assets/imagenes/project1.jpg", "url":"#"},
+    {"id":"2", "nombre":"proyecto2","descripcion":"tipo trabajo2", "img":"../assets/imagenes/project2.jpg", "url":"#"},
+    {"id":"3", "nombre":"proyecto3","descripcion":"tipo trabajo3", "img":"../assets/imagenes/project3.jpg", "url":"#"},
+    {"id":"4", "nombre":"proyecto4","descripcion":"tipo trabajo4", "img":"../assets/imagenes/project4.jpg", "url":"#"},
+    {"id":"5", "nombre":"proyecto5","descripcion":"tipo trabajo5", "img":"../assets/imagenes/project5.jpg", "url":"#"}
+>>>>>>> nuevo_codigo
   ],
-  "skills":[
-    {
-    "id":"1",
+  "skills":{
     "frontEnd":[
       {"id":"1", "nombre":"HTML", "nivel":"avanzado"},
       {"id":"2", "nombre":"CSS", "nivel":"intermedio"},
@@ -29,14 +39,13 @@
       {"id":"4", "nombre":"Angular", "nivel":"intermedio"},
       {"id":"5", "nombre":"Bootstrap", "nivel":"intermedio"},
       {"id":"6", "nombre":"Git", "nivel":"intermedio"}
-    ]},
-    {"id":"2",
+    ],
       "backEnd":[
         {"id":"1", "nombre":"Java", "nivel":"intermedio"},
         {"id":"2", "nombre":"MySQL", "nivel":"itermedio"},
         {"id":"3", "nombre":"Spring Boot", "nivel":"básico"},
         {"id":"4", "nombre":"NodeJs", "nivel":"básico"}
-      ]
-    }
-  ]
+      ]}
+
+
 }
