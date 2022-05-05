@@ -1,23 +1,23 @@
 {
   "nombre": "Marcos Duarte",
-  "perfil": "https://drive.google.com/file/d/1XdKjFn_-he_-PSKyIUeAq66gJGLZd36W/view?usp=sharing",
+  "perfil": "../assets/imagenes/perfil.png",
   "position": "Desarrollador web full-stack",
   "linkedin": "https://www.linkedin.com/in/marcosjavierduarte/",
   "gitHub": "https://github.com/jworkss",
   "sobreMi": [
-      { "id": "1", "nombre":"años de estudio", "cantidad":"1"  },
-      {"id": "2", "nombre":"Proyectos Completados", "cantidad":"+XX"},
-      {"id": "3", "nombre":"Clientes Satisfechos", "cantidad":"+XX"}
+      { "id": "1", "nombre1":"años", "nombre2":"de estudio", "cantidad":"1"  },
+      {"id": "2", "nombre1":"Proyectos", "nombre2":"Completados", "cantidad":"+XX"},
+      {"id": "3", "nombre1":"Clientes", "nombre2":"Satisfechos", "cantidad":"+XX"}
     ],
   "whatsApp": "https://api.whatsapp.com/send?phone=+541132279268&text=Hola, me gustaría contactarte.",
   "messenger": "https://m.me/JayMatamuneRose",
   "curriculum": "https://drive.google.com/file/d/1CXTFeeK3IIM80Ks6XzgfzWv4djmmqMaW/view?usp=sharing",
   "proyectos":[
-    {"id":"1", "nombre":"proyecto2","descripcion":"tipo trabajo1", "img":"https://drive.google.com/file/d/18ib5A_k5bZmmQc0bmCoXorU2tXRegNIc/view?usp=sharing", "url":"/"},
-    {"id":"2", "nombre":"proyecto3","descripcion":"tipo trabajo2", "img":"https://drive.google.com/file/d/1j0LZIAj4H-HajbHK_YiUEGEN1lSlpsYd/view?usp=sharing", "url":"/"},
-    {"id":"3", "nombre":"proyecto4","descripcion":"tipo trabajo3", "img":"https://drive.google.com/file/d/1VxaxCjb8zeZSvnERhV4bBI1VURX4qOov/view?usp=sharing", "url":"/"},
-    {"id":"4", "nombre":"proyecto5","descripcion":"tipo trabajo4", "img":"https://drive.google.com/file/d/1VxaxCjb8zeZSvnERhV4bBI1VURX4qOov/view?usp=sharing", "url":"/"},
-    {"id":"5", "nombre":"proyecto6","descripcion":"tipo trabajo5", "img":"https://drive.google.com/file/d/1VxaxCjb8zeZSvnERhV4bBI1VURX4qOov/view?usp=sharing", "url":"/"}
+    {"id":"1", "nombre":"proyecto1","descripcion":"tipo trabajo1", "img":"../assets/imagenes/project1.jpg", "url":"#"},
+    {"id":"2", "nombre":"proyecto2","descripcion":"tipo trabajo2", "img":"../assets/imagenes/project2.jpg", "url":"#"},
+    {"id":"3", "nombre":"proyecto3","descripcion":"tipo trabajo3", "img":"../assets/imagenes/project3.jpg", "url":"#"},
+    {"id":"4", "nombre":"proyecto4","descripcion":"tipo trabajo4", "img":"../assets/imagenes/project4.jpg", "url":"#"},
+    {"id":"5", "nombre":"proyecto5","descripcion":"tipo trabajo5", "img":"../assets/imagenes/project5.jpg", "url":"#"}
   ],
   "skills":[
     {

@@ -8,7 +8,7 @@
       <div class="profile__border">
         <div class="profile__perfil">
           <!-- Imagen de tamaño para el perfil del porfolio -->
-          <img src="../assets/imagenes/perfil.png" alt="">
+          <img [src]="miPorfolio.perfil" alt="">
         </div>
       </div>
 
@@ -25,24 +25,7 @@
       </ul>
     </div>
 
-    <div class="profile__info grid">
-      <div class="profile__info-group">
-        <h3 class="profile__info-number">{{miPorfolio.sobreMi[0].cantidad}}</h3>
-        <p class="profile__info-description">
-          Años <br> de estudio
-        </p>
-      </div>
-      <div class="profile__info-group">
-        <h3 class="profile__info-number">{{miPorfolio.sobreMi[1].cantidad}}</h3>
-        <p class="profile__info-description">
-          Proyectos <br> completados
-        </p>
-      </div>
-      <div class="profile__info-group">
-        <h3 class="profile__info-number">{{miPorfolio.sobreMi[2].cantidad}}</h3>
-        <p class="profile__info-description">Clientes <br> satisfechos</p>
-      </div>
-    </div>
+    <app-sobre-mi></app-sobre-mi>
 
     <div class="profile__buttons">
       <!-- Mi CV -->
@@ -56,7 +39,7 @@
           class="button button__small button__gray">
           <i class="ri-whatsapp-line"></i>
         </a>
-        <!-- mensaje directo a redes sociales -->
+        <!-- mensaje directo a redes sociales (facebook) -->
         <a href={{miPorfolio.messenger}} target="_blank" class="button button__small button__gray">
           <i class="ri-messenger-line"></i>
         </a>
