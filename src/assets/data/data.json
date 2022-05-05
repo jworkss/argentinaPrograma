@@ -19,9 +19,7 @@
     {"id":"4", "nombre":"proyecto4","descripcion":"tipo trabajo4", "img":"../assets/imagenes/project4.jpg", "url":"#"},
     {"id":"5", "nombre":"proyecto5","descripcion":"tipo trabajo5", "img":"../assets/imagenes/project5.jpg", "url":"#"}
   ],
-  "skills":[
-    {
-    "id":"1",
+  "skills":{
     "frontEnd":[
       {"id":"1", "nombre":"HTML", "nivel":"avanzado"},
       {"id":"2", "nombre":"CSS", "nivel":"intermedio"},
@@ -29,14 +27,13 @@
       {"id":"4", "nombre":"Angular", "nivel":"intermedio"},
       {"id":"5", "nombre":"Bootstrap", "nivel":"intermedio"},
       {"id":"6", "nombre":"Git", "nivel":"intermedio"}
-    ]},
-    {"id":"2",
+    ],
       "backEnd":[
         {"id":"1", "nombre":"Java", "nivel":"intermedio"},
         {"id":"2", "nombre":"MySQL", "nivel":"itermedio"},
         {"id":"3", "nombre":"Spring Boot", "nivel":"básico"},
         {"id":"4", "nombre":"NodeJs", "nivel":"básico"}
-      ]
-    }
-  ]
+      ]}
+
+
 }

@@ -41,59 +41,22 @@
 
       <div class="skills__box">
         <div class="skills__group">
-          <div class="skills__data">
-            <i class="ri-checkbox-circle-line"></i>
+          <div class="skills__data" *ngFor="let skill of misFrontEnd; let inpar = odd; ">
+            <i class="ri-checkbox-circle-line" *ngIf="!inpar"></i>
 
             <div>
-              <h3 class="skills__name">HTML</h3>
-              <span class="skills__level">Avanzado</span>
-            </div>
-          </div>
-
-          <div class="skills__data">
-            <i class="ri-checkbox-circle-line"></i>
-
-            <div>
-              <h3 class="skills__name">CSS</h3>
-              <span class="skills__level">Intermedio</span>
-            </div>
-          </div>
-
-          <div class="skills__data">
-            <i class="ri-checkbox-circle-line"></i>
-
-            <div>
-              <h3 class="skills__name">JavaScript</h3>
-              <span class="skills__level">Intermediate</span>
+              <h3 class="skills__name" *ngIf="!inpar">{{skill.nombre}}</h3>
+              <span class="skills__level" *ngIf="!inpar">{{skill.nivel}}</span>
             </div>
           </div>
         </div>
-
         <div class="skills__group">
-          <div class="skills__data">
-            <i class="ri-checkbox-circle-line"></i>
+          <div class="skills__data" *ngFor="let skill of misFrontEnd; let inpar = odd; ">
+            <i class="ri-checkbox-circle-line" *ngIf="inpar"></i>
 
             <div>
-              <h3 class="skills__name">Angular</h3>
-              <span class="skills__level">Intermediate</span>
-            </div>
-          </div>
-
-          <div class="skills__data">
-            <i class="ri-checkbox-circle-line"></i>
-
-            <div>
-              <h3 class="skills__name">Bootstrap</h3>
-              <span class="skills__level">Intermediate</span>
-            </div>
-          </div>
-
-          <div class="skills__data">
-            <i class="ri-checkbox-circle-line"></i>
-
-            <div>
-              <h3 class="skills__name">Git</h3>
-              <span class="skills__level">Intermediate</span>
+              <h3 class="skills__name" *ngIf="inpar">{{skill.nombre}}</h3>
+              <span class="skills__level" *ngIf="inpar">{{skill.nivel}}</span>
             </div>
           </div>
         </div>
@@ -105,41 +68,23 @@
 
       <div class="skills__box">
         <div class="skills__group">
-          <div class="skills__data">
-            <i class="ri-checkbox-circle-line"></i>
+          <div class="skills__data" *ngFor="let backEnd of misBackEnd; let inpar = odd;">
+            <i class="ri-checkbox-circle-line" *ngIf="!inpar"></i>
 
             <div>
-              <h3 class="skills__name">Java</h3>
-              <span class="skills__level">Intermedio</span>
-            </div>
-          </div>
-
-          <div class="skills__data">
-            <i class="ri-checkbox-circle-line"></i>
-
-            <div>
-              <h3 class="skills__name">MySQL</h3>
-              <span class="skills__level">Intermedio</span>
-            </div>
-          </div>
-
-          <div class="skills__data">
-            <i class="ri-checkbox-circle-line"></i>
-
-            <div>
-              <h3 class="skills__name">Node Js</h3>
-              <span class="skills__level">Basico</span>
+              <h3 class="skills__name" *ngIf="!inpar">{{backEnd.nombre}}</h3>
+              <span class="skills__level" *ngIf="!inpar">{{backEnd.nivel}}</span>
             </div>
           </div>
         </div>
 
         <div class="skills__group">
-          <div class="skills__data">
-            <i class="ri-checkbox-circle-line"></i>
+          <div class="skills__data" *ngFor="let backEnd of misBackEnd; let inpar = odd;">
+            <i class="ri-checkbox-circle-line" *ngIf="inpar"></i>
 
             <div>
-              <h3 class="skills__name">Spring Boot</h3>
-              <span class="skills__level">Basico</span>
+              <h3 class="skills__name" *ngIf="inpar">{{backEnd.nombre}}</h3>
+              <span class="skills__level" *ngIf="inpar">{{backEnd.nivel}}</span>
             </div>
           </div>
         </div>

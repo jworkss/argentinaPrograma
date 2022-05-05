@@ -8,7 +8,8 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 })
 export class MainComponent implements OnInit {
   misTrabajos:any;
-  misSkills:any;
+  misFrontEnd:any;
+  misBackEnd:any;
 
   constructor(private datosPortfolio:PortfolioService) { }
 
@@ -18,8 +19,14 @@ export class MainComponent implements OnInit {
     })
 
     this.datosPortfolio.obtenerDatos().subscribe(data =>{
-      this.misSkills = data.skills;
+      this.misFrontEnd = data.skills.frontEnd;
     })
+
+    this.datosPortfolio.obtenerDatos().subscribe(data =>{
+      this.misBackEnd = data.skills.backEnd;
+    })
+
+
   }
 
 }
