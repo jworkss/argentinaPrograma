@@ -7,26 +7,33 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  misTrabajos:any;
-  misFrontEnd:any;
-  misBackEnd:any;
+  misTrabajos: any;
+  misFrontEnd: any;
+  misBackEnd: any;
 
-  constructor(private datosPortfolio:PortfolioService) { }
+  constructor(private datosPortfolio: PortfolioService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data =>{
+    this.datosPortfolio.obtenerDatos().subscribe(data => {
       this.misTrabajos = data.proyectos;
     })
 
-    this.datosPortfolio.obtenerDatos().subscribe(data =>{
+    this.datosPortfolio.obtenerDatos().subscribe(data => {
       this.misFrontEnd = data.skills.frontEnd;
     })
 
-    this.datosPortfolio.obtenerDatos().subscribe(data =>{
+    this.datosPortfolio.obtenerDatos().subscribe(data => {
       this.misBackEnd = data.skills.backEnd;
     })
+
+
 
 
   }
 
 }
+
+
+
+
+

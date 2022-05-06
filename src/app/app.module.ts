@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
+import { ThemeComponent } from './components/theme/theme.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
     HeaderComponent,
     MainComponent,
     FooterComponent,
-    SobreMiComponent
+    SobreMiComponent,
+    ThemeComponent
   ],
   imports: [
     BrowserModule,
