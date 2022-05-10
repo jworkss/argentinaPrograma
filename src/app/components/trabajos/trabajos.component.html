@@ -1,0 +1,17 @@
+
+<div class="projects__content grid filters__active" data-content id="projects">
+  <article class="projects__card" *ngFor="let trabajo of misTrabajos">
+    <!-- Imagen tamaño rectangular(Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+    <img [src]="trabajo.img" alt="" class="projects__img">
+
+    <div class="projects__modal">
+      <div>
+        <span class="projects__subtitle">{{trabajo.descripcion}}</span>
+        <h3 class="projects__title">{{trabajo.nombre}}</h3>
+        <a href="#" class="projects__button button button__small">
+          <i class="ri-link"></i>
+        </a>
+      </div>
+    </div>
+  </article>
+</div>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
@@ -9,6 +10,14 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { ThemeComponent } from './components/theme/theme.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { TrabajosComponent } from './components/trabajos/trabajos.component';
+import { BotonesComponent } from './components/botones/botones.component';
+
+const appRoutes:Routes = [
+  {path: '', component: MainComponent},
+  {path: 'skills', component: SkillsComponent}
+]
 
 @NgModule({
   declarations: [
@@ -17,11 +26,15 @@ import { ThemeComponent } from './components/theme/theme.component';
     MainComponent,
     FooterComponent,
     SobreMiComponent,
-    ThemeComponent
+    ThemeComponent,
+    SkillsComponent,
+    TrabajosComponent,
+    BotonesComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes, {enableTracing: true})
   ],
   providers: [],
   bootstrap: [AppComponent]
