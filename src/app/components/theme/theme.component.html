@@ -1,1 +1,4 @@
-<i class="ri-moon-line change-theme" id="theme-button"></i>
+
+<i [ngClass]="myClass ? 'ri-moon-line change-theme' : 'ri-sun-line change-theme'" id="theme-button"
+(click)="changeClass()">
+</i>

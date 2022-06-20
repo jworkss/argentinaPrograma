@@ -12,7 +12,7 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { ThemeComponent } from './components/theme/theme.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { TrabajosComponent } from './components/trabajos/trabajos.component';
-import { BotonesComponent } from './components/botones/botones.component';
+
 
 const appRoutes:Routes = [
   {path: '', component: MainComponent},
@@ -28,8 +28,7 @@ const appRoutes:Routes = [
     SobreMiComponent,
     ThemeComponent,
     SkillsComponent,
-    TrabajosComponent,
-    BotonesComponent
+    TrabajosComponent
   ],
   imports: [
     BrowserModule,
