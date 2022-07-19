@@ -1,5 +1,6 @@
 {
-  "nombre": "Marcos Duarte",
+  "nombre": "Marcos",
+  "apellido": "Duarte",
   "perfil": "../assets/imagenes/perfil.png",
   "position": "Desarrollador web full-stack",
   "linkedin": "https://www.linkedin.com/in/marcosjavierduarte/",
